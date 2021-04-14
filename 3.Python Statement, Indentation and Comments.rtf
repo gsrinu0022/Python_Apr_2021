@@ -1,0 +1,135 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Tahoma-Bold;\f1\fnil\fcharset0 Tahoma;}
+{\colortbl;\red255\green255\blue255;\red251\green2\blue7;\red255\green255\blue255;\red28\green26\blue75;
+\red28\green26\blue75;\red42\green44\blue51;\red133\green85\blue4;\red66\green147\blue62;\red8\green57\blue240;
+\red147\green0\blue147;\red14\green112\blue173;\red143\green144\blue150;\red50\green94\blue238;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c14913\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c14510\c14902\c36863;
+\cssrgb\c14510\c14902\c36863\c70196;\cssrgb\c21961\c22745\c25882;\cssrgb\c59608\c40784\c392;\cssrgb\c31373\c63137\c30980;\cssrgb\c1961\c33725\c95294;
+\cssrgb\c65098\c14902\c64314;\cssrgb\c392\c51765\c73333;\cssrgb\c62745\c63137\c65490;\cssrgb\c25098\c47059\c94902;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh15540\viewkind0
+\deftab720
+\pard\pardeftab720\li367\fi52\sl1080\sa400\partightenfactor0
+
+\f0\b\fs18 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Python Statement, Indentation and Comments\
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+
+\f1\b0 \cf5 \strokec5 In this, you will learn about Python statements, why indentation is important and use of comments in programming.\
+
+\f0\b \cf2 \strokec4 Python Statement\
+
+\f1\b0 \cf5 \strokec5 Instructions that a Python interpreter can execute are called statements. For example,\'a0a = 1\'a0is an assignment statement.\'a0if\'a0statement,\'a0for\'a0statement,\'a0while\'a0statement, etc. are other kinds of statements which will be discussed later.\
+\pard\pardeftab720\li367\fi52\sl600\sa240\partightenfactor0
+
+\f0\b \cf2 \strokec4 Multi-line statement\
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+
+\f1\b0 \cf5 \strokec5 In Python, the end of a statement is marked by a newline character. But we can make a statement extend over multiple lines with the line continuation character (\\). For example:\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf6 \strokec6 a = \cf7 \strokec7 1\cf6 \strokec6  + \cf7 \strokec7 2\cf6 \strokec6  + \cf7 \strokec7 3\cf6 \strokec6  + \\\
+    \cf7 \strokec7 4\cf6 \strokec6  + \cf7 \strokec7 5\cf6 \strokec6  + \cf7 \strokec7 6\cf6 \strokec6  + \\\
+    \cf7 \strokec7 7\cf6 \strokec6  + \cf7 \strokec7 8\cf6 \strokec6  + \cf7 \strokec7 9\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+\cf5 \strokec5 This is an explicit line continuation. In Python, line continuation is implied inside parentheses\'a0( ), brackets\'a0[ ], and braces\'a0\{ \}. For instance, we can implement the above multi-line statement as:\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf6 \strokec6 a = (\cf7 \strokec7 1\cf6 \strokec6  + \cf7 \strokec7 2\cf6 \strokec6  + \cf7 \strokec7 3\cf6 \strokec6  +\
+    \cf7 \strokec7 4\cf6 \strokec6  + \cf7 \strokec7 5\cf6 \strokec6  + \cf7 \strokec7 6\cf6 \strokec6  +\
+    \cf7 \strokec7 7\cf6 \strokec6  + \cf7 \strokec7 8\cf6 \strokec6  + \cf7 \strokec7 9\cf6 \strokec6 )\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+\cf5 \strokec5 Here, the surrounding parentheses\'a0( )\'a0do the line continuation implicitly. Same is the case with\'a0[ ]\'a0and\'a0\{ \}. For example:\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf6 \strokec6 colors = [\cf8 \strokec8 'red'\cf6 \strokec6 ,\
+          \cf8 \strokec8 'blue'\cf6 \strokec6 ,\
+          \cf8 \strokec8 'green'\cf6 \strokec6 ]\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+\cf5 \strokec5 We can also put multiple statements in a single line using semicolons, as follows:\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf6 \strokec6 a = \cf7 \strokec7 1\cf6 \strokec6 ; b = \cf7 \strokec7 2\cf6 \strokec6 ; c = \cf7 \strokec7 3\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl720\sa240\partightenfactor0
+
+\f0\b \cf2 Python Indentation\
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+
+\f1\b0 \cf5 \strokec5 Most of the programming languages like C, C++, and Java use braces\'a0\{ \}\'a0to define a block of code. Python, however, uses indentation.\
+A code block (body of a\'a0{\field{\*\fldinst{HYPERLINK "https://www.programiz.com/python-programming/function"}}{\fldrslt \cf9 \strokec9 function}},\'a0{\field{\*\fldinst{HYPERLINK "https://www.programiz.com/python-programming/for-loop"}}{\fldrslt \cf9 \strokec9 loop}}, etc.) starts with indentation and ends with the first unindented line. The amount of indentation is up to you, but it must be consistent throughout that block.\
+Generally, four whitespaces are used for indentation and are preferred over tabs. Here is an example.\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf10 \strokec10 for\cf6 \strokec6  i \cf10 \strokec10 in\cf6 \strokec6  range(\cf7 \strokec7 1\cf6 \strokec6 ,\cf7 \strokec7 11\cf6 \strokec6 ):\
+    \cf10 \strokec10 print\cf6 \strokec6 (i)\
+    \cf10 \strokec10 if\cf6 \strokec6  i == \cf7 \strokec7 5\cf6 \strokec6 :\
+        \cf10 \strokec10 break\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+\cf5 \strokec5 The enforcement of indentation in Python makes the code look neat and clean. This results in Python programs that look similar and consistent.\
+Indentation can be ignored in line continuation, but it's always a good idea to indent. It makes the code more readable. For example:\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf10 \strokec10 if\cf6 \strokec6  \cf11 \strokec11 True\cf6 \strokec6 :\
+    \cf10 \strokec10 print\cf6 \strokec6 (\cf8 \strokec8 'Hello'\cf6 \strokec6 )\
+    a = \cf7 \strokec7 5\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+\cf5 \strokec5 and\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf10 \strokec10 if\cf6 \strokec6  \cf11 \strokec11 True\cf6 \strokec6 : \cf10 \strokec10 print\cf6 \strokec6 (\cf8 \strokec8 'Hello'\cf6 \strokec6 ); a = \cf7 \strokec7 5\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+\cf5 \strokec5 both are valid and do the same thing, but the former style is clearer.\
+Incorrect indentation will result in\'a0IndentationError.\
+
+\f0\b \cf2 \strokec4 Python Comments\
+
+\f1\b0 \cf5 \strokec5 Comments are very important while writing a program. They describe what is going on inside a program, so that a person looking at the source code does not have a hard time figuring it out.\
+You might forget the key details of the program you just wrote in a month's time. So taking the time to explain these concepts in the form of comments is always fruitful.\
+In Python, we use the hash (
+\f0\b #
+\f1\b0 ) symbol to start writing a comment.\
+It extends up to the newline character. Comments are for programmers to better understand a program. Python Interpreter ignores comments.\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf12 \strokec12 #This is a comment\cf6 \strokec6 \
+\cf12 \strokec12 #print out Hello\cf6 \strokec6 \
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf10 \strokec10 print\cf6 \strokec6 (\cf8 \strokec8 'Hello'\cf6 \strokec6 )\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl600\sa240\partightenfactor0
+
+\f0\b \cf2 Multi-line comments\
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+
+\f1\b0 \cf5 \strokec5 We can have comments that extend up to multiple lines. One way is to use the hash(
+\f0\b #
+\f1\b0 ) symbol at the beginning of each line. For example:\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf12 \strokec12 #This is a long comment\cf6 \strokec6 \
+\cf12 \strokec12 #and it extends\cf6 \strokec6 \
+\cf12 \strokec12 #to multiple lines\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+\cf5 \strokec5 Another way of doing this is to use triple quotes, either\'a0'''\'a0or\'a0""".\
+These triple quotes are generally used for multi-line strings. But they can be used as a multi-line comment as well. Unless they are not docstrings, they do not generate any extra code.\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf8 \strokec8 """This is also a\
+perfect example of\
+multi-line comments"""\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+\cf5 \strokec5 To learn more about comments, visit\'a0{\field{\*\fldinst{HYPERLINK "https://www.programiz.com/python-programming/comments"}}{\fldrslt \cf9 \strokec9 Python Comments}}.\
+
+\f0\b \cf2 \strokec4 Docstrings in Python\
+
+\f1\b0 \cf5 \strokec5 A docstring is short for documentation string.\
+Python docstrings (documentation strings) are the\'a0{\field{\*\fldinst{HYPERLINK "https://www.programiz.com/python-programming/string"}}{\fldrslt \cf9 \strokec9 string}}\'a0literals that appear right after the definition of a function, method, class, or module.\
+Triple quotes are used while writing docstrings. For example:\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf10 \strokec10 def\cf6 \strokec6  \cf13 \strokec13 double\cf6 \strokec6 (num):\
+    \cf8 \strokec8 """Function to double the value"""\cf6 \strokec6 \
+    \cf10 \strokec10 return\cf6 \strokec6  \cf7 \strokec7 2\cf6 \strokec6 *num\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+\cf5 \strokec5 Docstrings appear right after the definition of a function, class, or a module. This separates docstrings from multiline comments using triple quotes.\
+The docstrings are associated with the object as their\'a0__doc__\'a0attribute.\
+So, we can access the docstrings of the above function with the following lines of code:\
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf10 \strokec10 def\cf6 \strokec6  \cf13 \strokec13 double\cf6 \strokec6 (num):\
+    \cf8 \strokec8 """Function to double the value"""\cf6 \strokec6 \
+    \cf10 \strokec10 return\cf6 \strokec6  \cf7 \strokec7 2\cf6 \strokec6 *num\
+\cf10 \strokec10 print\cf6 \strokec6 (double.__doc__)\cf4 \strokec4 \
+\pard\pardeftab720\li367\fi52\sl600\sa320\partightenfactor0
+
+\f0\b \cf5 \strokec5 Output
+\f1\b0 \
+\pard\pardeftab720\li367\fi52\sl400\partightenfactor0
+\cf4 \strokec4 Function to double the value\
+}
